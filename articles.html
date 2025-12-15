@@ -1,0 +1,23 @@
+<h2>My Medium Articles</h2>
+
+<script src="https://rss2json.com/gfapi.js"></script>
+<script>
+rss2json(
+  "https://medium.com/feed/@nikolaajdukovic",
+  function (data) {
+    let output = "<ul>";
+    data.entries.forEach(entry => {
+      output += `
+        <li>
+          <a href="${entry.link}" target="_blank">
+            ${entry.title}
+          </a>
+        </li>`;
+    });
+    output += "</ul>";
+    document.getElementById("feed").innerHTML = output;
+  }
+);
+</script>
+
+<div id="feed"></div>
