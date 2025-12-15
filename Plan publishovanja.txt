@@ -1,0 +1,23 @@
+
+
+20/21 decembar Filtering Notifications by Type (You Control Behavior by Type Identity) using OfType<T>()
+
+27/28 decembar Comparing Two Approaches: With and Without OfType<T>() in Notification Processing
+
+3/4 januar Cast<T>() vs OfType<T>() in LINQ: The Complete, Real-World Guide (With Fruit & Vegetable Domain Examples)
+
+10/11 januar LINQ in C#: The ToXxx() Conversion Methods - What They Do, When to Use Them, and Real-World  Examples
+
+17/18 januar LINQ in C#: The AsXxx() Conversion Methods - What They Do, When to Use Them, and Real-World Examples
+
+24/25 januar LINQ in C#: The Where Operator - Filtering Data the Right Way
+
+7/8 februar LINQ in C#: Where vs OfType<T>() - Similar Goals, Very Different Responsibilities
+
+14/15 februar LINQ in C#: Understanding the Select() Operator
+
+21/22 februar LINQ in C#: Understanding the SelectMany() Operator [Part 1]
+
+1 mart LINQ in C#: Understanding the SelectMany() Operator [Part 2]
+
+7/8 mart LINQ in C#: Understanding the SelectMany() Operator [Part 3]
