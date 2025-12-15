@@ -3,37 +3,141 @@ layout: default
 title: Articles
 ---
 
-<section>
+<style>
+/* Container */
+.articles-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
 
-  <h1>Articles</h1>
+/* Header */
+.articles-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
 
-  <p>
-    All of my technical writing is published on <strong>Medium</strong>.
-    This page serves as a <em>central index</em> and long-term archive of my work.
-  </p>
+.articles-header p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
 
-  <p>
-    My articles focus on understanding how things work under the hood,
-    using real-world domains and production-oriented examples.
-  </p>
+/* Medium box */
+.medium-box {
+  margin: 2rem 0;
+  padding: 1.2rem 1.4rem;
+  background: #f6f8fa;
+  border-left: 5px solid #0a7ac9;
+  border-radius: 6px;
+}
 
-  <div style="margin: 1.5em 0; padding: 1em; background-color: #f7f9fc; border-left: 4px solid #0366d6;">
-    <strong>📘 Read all articles on Medium</strong><br/>
+.medium-box a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Section titles */
+.section-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 0.3rem;
+}
+
+/* Cards */
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.series-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 1.3rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.series-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.series-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Footer note */
+.archive-note {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: #666;
+  border-top: 1px dashed #ddd;
+  padding-top: 1rem;
+}
+</style>
+
+<div class="articles-wrapper">
+
+  <section class="articles-header">
+    <h1>Articles</h1>
+    <p>
+      All my technical articles are published on <strong>Medium</strong>.
+      This page serves as a clean, centralized index and long-term archive.
+    </p>
+  </section>
+
+  <div class="medium-box">
+    📘 <strong>Read all articles on Medium</strong><br/>
     <a href="https://medium.com/@nikolaajdukovic" target="_blank">
       medium.com/@nikolaajdukovic
     </a>
   </div>
 
-</section>
+  <section>
+    <h2 class="section-title">Featured series</h2>
 
-<hr/>
+    <div class="series-grid">
 
-<section>
+      <div class="series-card">
+        <h3>LINQ internals in C#</h3>
+        <p>
+          Deep dives into <code>Select</code>, <code>Where</code>,
+          <code>SelectMany</code>, <code>OfType</code>, <code>Cast</code>,
+          and the <code>ToXxx</code> / <code>AsXxx</code> families.
+        </p>
+      </div>
 
-  <h2>Featured series</h2>
+      <div class="series-card">
+        <h3>IEnumerable & deferred execution</h3>
+        <p>
+          How lazy evaluation works, why <code>yield</code> exists,
+          and how streaming pipelines behave in real production systems.
+        </p>
+      </div>
 
-  <ul>
-    <li>
-      <strong>LINQ internals in C#</strong><br/>
-      Deep dives into <code>Select</code>, <code>Where</code>, <code>SelectMany</code>,
-      <code>OfType</code>, <code>Cast</code>, and the <cod
+      <div class="series-card">
+        <h3>Real-world domain modeling</h3>
+        <p>
+          Practical examples from <strong>banking</strong>,
+          <strong>sports betting</strong>, and <strong>logistics</strong>,
+          focused on correctness and design intent.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <p class="archive-note">
+    Articles are not reposted here.  
+    Each entry links back to the original Medium publication to preserve a single source of truth.
+  </p>
+
+</div>
